@@ -8,7 +8,7 @@ Galimos reiksmes:
 Loginiai operatoriai:
 - && (and)
 - || (or)
-
+- ! (not/invert)
 */
 
 const arLyja = false;
@@ -32,13 +32,43 @@ const arYraDviKomandos = true;
 const arVykstaVarzybos = arDiena && arYraDviKomandos;
 console.log('Varzybos:', arVykstaVarzybos);
 
+
 // Kermosius
 // - vaikas noretu gaidelio
 // - vaikas noretu lazdeles
 // - vaikas noretu grybuko
 
-const arTurimGaidelio = true;
+const arTurimGaidelio = false;
 const arTurimLazdeles = true;
-const arTurimGrybuko = true;
+const arTurimGrybuko = false;
 
-const arVaikasGausSaldaini = 
+const arVaikasGausSaldaini = arTurimGaidelio || arTurimGrybuko || arTurimLazdeles;
+console.log('Kermosius:', arVaikasGausSaldaini);
+
+const a = true;
+const b = false;
+const c = true;
+
+console.log(a && b, '->', false);
+console.log(a || b, '->', true);
+console.log(a && b && c, '->', false);
+
+console.log(a && b || c, '->', true);
+
+// console.log(true && false || true, '->',);
+
+console.log(a || b && c, '->', true);
+
+console.clear();
+
+// Visi stringai yra true, isskyrus tuscius
+console.log(!'Labas');
+console.log(!'');
+
+//Visi skaiciai yra true, isskyrus 0 (nulis)
+console.log(!5);
+console.log(!-5);
+console.log(!0);
+
+// positive, negative numbers
+// truthy, falsy number values
