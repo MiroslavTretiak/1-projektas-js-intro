@@ -7,16 +7,27 @@ Multi komentaras
 
 /*
 Busimos temos:
--duomenu tipai (data types)
+ - duomenu tipai (data types)
     - skaciai 
     - tekstas
     - logines reiksmes
     - sąrašas
     - objektas
--salygos (if)
--ciklai (for)
--funkcijos
--ivykiai (event listeners)
+ - salygos (if)
+    - if
+    - ternary
+    - switch
+ - ciklai (for)
+    - for
+    - while
+    - do-while
+    - for-of
+    - for-in
+ - funkcijos
+    - function
+    - arrow function
+    - class
+ - ivykiai (event listeners)
 */
 /*
 NUMBERS

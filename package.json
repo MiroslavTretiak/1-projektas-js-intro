@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typeof": "node --watch ./functions/typeof.js",
+    "functions": "node --watch ./functions/functions.js",
     "homeWork": "node --watch ./homeWork.js",
     "ternary": "node --watch ./compare/ternary.js",
     "if": "node --watch ./compare/if.js",
