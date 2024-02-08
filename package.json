@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "for": "node --watch ./loops/for.js",
     "typeof": "node --watch ./functions/typeof.js",
     "functions": "node --watch ./functions/functions.js",
-    "homeWork": "node --watch ./homeWork.js",
+    "number-sum": "node --watch ./exercises/number-sum.js",
     "ternary": "node --watch ./compare/ternary.js",
     "if": "node --watch ./compare/if.js",
     "array": "node --watch ./data-types/array.js",

@@ -51,18 +51,32 @@ function marksAverage(marks) {
             total += marks[i];
             i += 1;
     */
+    // let total = 0;
+    // let i = 0;
+
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+    // total += marks[i];
+    // i++;
+
     let total = 0;
     let i = 0;
 
-    total += marks[i];
-    i++
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
-    total += marks[i];
-    i += 1;
+    // total += marks[i++];
+    // total += marks[i++];
+    // total += marks[i++];
+    // total += marks[i++];
+    // total += marks[i++];
 
+    for (let i = 0; i < marks.length; i++) {
+        total += marks[i];
+    }
 
 
     const count = marks.length;
