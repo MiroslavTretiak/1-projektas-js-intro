@@ -83,3 +83,39 @@ console.log(money);
 
 money += 5;
 console.log(money);
+
+console.clear();
+
+let i = 0;
+console.log(i);
+
+i = i + 1;
+console.log(i);
+
+i = i + 1;
+console.log(i);
+
+i++
+console.log(i);
+
+i++
+console.log(i);
+
+i++
+console.log(i);
+
+console.clear();
+
+let k = 0;
+console.log(k);
+console.log(k++);
+console.log(k++);
+console.log(k++);
+console.log('---------------');
+
+let l = 0;
+console.log(l);
+console.log(++l);
+console.log(++l);
+console.log(++l);
+
