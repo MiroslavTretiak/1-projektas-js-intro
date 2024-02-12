@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "while": "node --watch ./loops/while.js",
+    "for-of": "node --watch ./loops/for-of.js",
     "object": "node --watch ./data-types/object.js",
     "reverse": "node --watch ./exercises/reverse.js",
     "for": "node --watch ./loops/for.js",

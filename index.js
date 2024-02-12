@@ -8,23 +8,24 @@ Multi komentaras
 /*
 Busimos temos:
  - duomenu tipai (data types)
-    - skaciai 
-    - tekstas
-    - logines reiksmes
-    - sąrašas
-    - objektas
+    + skaciai 
+    + tekstas
+    + logines reiksmes
+    + sąrašas
+    + objektas
+    - null
  - salygos (if)
-    - if
-    - ternary
+    + if
+    + ternary
     - switch
  - ciklai (for)
-    - for
+    + for
     - while
     - do-while
     - for-of
     - for-in
  - funkcijos
-    - function
+    + function
     - arrow function
     - class
  - ivykiai (event listeners)
