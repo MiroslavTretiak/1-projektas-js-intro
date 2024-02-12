@@ -1,3 +1,4 @@
+//For-of dirba su masyvais
 
 //Kaip isrinkt objekta su for?
 

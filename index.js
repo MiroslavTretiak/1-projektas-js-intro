@@ -20,9 +20,9 @@ Busimos temos:
     - switch
  - ciklai (for)
     + for
-    - while
+    + while
     - do-while
-    - for-of
+    + for-of
     - for-in
  - funkcijos
     + function
