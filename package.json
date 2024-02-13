@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "codeWars": "node --watch ./exercises/codeWars.js",
     "for-in": "node --watch ./loops/for-in.js",
     "while": "node --watch ./loops/while.js",
     "for-of": "node --watch ./loops/for-of.js",
@@ -25,5 +26,8 @@
   },
   "keywords": [],
   "author": "Miroslav (https://github.com/MiroslavTretiak)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^5.0.3"
+  }
 }

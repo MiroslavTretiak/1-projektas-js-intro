@@ -301,3 +301,19 @@ console.clear();
 //     a[n + 1 - 1] = x;
 // }
 // console.log(a);
+
+console.clear();
+
+
+
+function repeatStr(n, s) {
+    return Array(n + 1).join(s);
+}
+describe("Tests", function () {
+    it("Basic tests", function () {
+        assert.strictEqual(repeatStr(3, "*"), "***");
+        assert.strictEqual(repeatStr(5, "#"), "#####");
+        assert.strictEqual(repeatStr(2, "ha "), "ha ha ");
+    });
+});
+
