@@ -49,3 +49,4 @@ const simboliuKiekis4 = `Vardo "${name4}" ilgis yra ${name4.length} simboliai`;
 const inicialai4 = `Asmens ${name4} ${surname4} inicialai yra ${surname4[0]}.${surname4[0]}`;
 console.log(simboliuKiekis4);
 console.log(inicialai4);
+
