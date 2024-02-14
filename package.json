@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "hof": "node --watch ./functions/hof.js",
+    "arrow": "node --watch ./functions/arrow.js",
+    "array3": "node --watch ./methods/array3.js",
+    "string2": "node --watch ./methods/string2.js",
+    "array2": "node --watch ./data-types/array2.js",
+    "methods:string2": "node --watch ./methods/string2.js",
     "codeWars": "node --watch ./exercises/codeWars.js",
     "for-in": "node --watch ./loops/for-in.js",
     "while": "node --watch ./loops/while.js",
