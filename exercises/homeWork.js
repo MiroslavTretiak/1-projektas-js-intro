@@ -302,18 +302,112 @@ console.clear();
 // }
 // console.log(a);
 
+
+
+function sums(numbers) {
+    if (numbers.length === 0) {
+        return 0;
+    }
+    else {
+        let sumNumbers = 0;
+        for (e of numbers) {
+            sumNumbers += e;
+        }
+        return sumNumbers;
+    }
+    // function sum(numbers) {
+    //     return numbers.reduce((a, b) => a + b, 0);
+    // }
+};
+
+console.log(sums([]), 0);
+console.log(sums([1, 5.2, 4, 0, -1]), 9.2);
+
+console.clear();
+
+function squareSum(numbers) {
+    return numbers.reduce((sum, num) => sum + (num * num), 0);
+}
+console.log(squareSum([1, 2]), 5);
+console.log(squareSum([0, 3, 4, 5]), 50);
+console.log(squareSum([]), 0);
+
+console.log();
+
+function greet() {
+    return "hello world"
+}
+
+console.log(greet(), "hello world!");
+
+console.clear();
+
+function highAndLow(numbers) {
+    // ...
+    numbers = numbers.split(' ');
+    let maximum = Math.max(...numbers);
+    let minima = Math.min(...numbers);
+    return maximum + ' ' + minima
+}
+
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"), '->', "42 -9");
+console.log(highAndLow("1 2 3"), '->', "3 1");
+
+console.clear();
+
+function lovefunc(flower1, flower2) {
+    // moment of truth
+    if (flower1 % 2 === 0 && flower2 % 2 === 1 || flower1 % 2 === 1 && flower2 % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(lovefunc(1, 4), true)
+console.log(lovefunc(2, 2), false)
+console.log(lovefunc(0, 1), true)
+console.log(lovefunc(0, 0), false)
+
+console.clear();
+
+function getSum(a, b) {
+    let min = Math.min(a, b),
+        max = Math.max(a, b);
+    return (max - min + 1) * (min + max) / 2;
+}
+
+console.log(getSum(0, -1), '->', '-1');
+console.log(getSum(0, 1), '->', '1');
+console.log(getSum(2, 2), '->', '2');
+console.log(getSum(-1, 2), '->', '2');
+
+console.clear();
+
+function sums(numbers) {
+    if (numbers.length === 0) {
+        return 0;
+    }
+    else {
+        let sumNumbers = 0;
+        for (e of numbers) {
+            sumNumbers += e;
+        }
+        return sumNumbers;
+    }
+    // function sum(numbers) {
+    //     return numbers.reduce((a, b) => a + b, 0);
+    // }
+};
+
+console.log(sums([]), 0);
+console.log(sums([1, 5.2, 4, 0, -1]), 9.2);
+
 console.clear();
 
 
+let name2 = ['Chuck Norris']
+let nameSurname = name2.split('');
+let name1 = name2[0];
 
-function repeatStr(n, s) {
-    return Array(n + 1).join(s);
-}
-describe("Tests", function () {
-    it("Basic tests", function () {
-        assert.strictEqual(repeatStr(3, "*"), "***");
-        assert.strictEqual(repeatStr(5, "#"), "#####");
-        assert.strictEqual(repeatStr(2, "ha "), "ha ha ");
-    });
-});
-
+console.log(nameSurname);
