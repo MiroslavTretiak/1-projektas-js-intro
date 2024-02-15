@@ -45,3 +45,41 @@ console.log(randomNumbers2);
 
 const randomNumbers3 = randomNumbers.map(n => n > 0 ? n : n * 10);
 console.log(randomNumbers3);
+
+console.clear();
+
+
+// Kaip itraukti i masyva skaicius nevyrsyjancius 10?
+const pazymiai = [10, 2, 8, 4, 6];
+//10, 4, 10, 8, 10
+
+function geresniPazymys(n) {
+    if (n * 2 > 10) {
+        return 10;
+    }
+    return n * 2;
+}
+function updateMarks(marks) {
+    const newMarks = [];
+
+    for (const mark of marks) {
+        const newMarkValue = mark * 2;
+        newMarks.push(geresniPazymys(mark));
+        //     if (newMarkValue <= 10) {
+        //         newMarks.push(newMarkValue);
+        //     } else {
+        //         newMarks.push(10);
+        //     }
+        // }
+    }
+    return newMarks;
+}
+
+console.log(updateMarks(pazymiai));
+
+//Variantas su .map();
+const geresniPazymiai = pazymiai.map(n => n * 2 > 10 ? 10 : n * 2);
+console.log(geresniPazymiai);
+
+const geresniPazymiai2 = pazymiai.map(geresniPazymys);
+console.log(geresniPazymiai2);
