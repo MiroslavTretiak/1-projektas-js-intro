@@ -68,22 +68,27 @@ console.clear();
 // kaip naujo studento objekto rakata (minMarks)
 
 for (const student of students) {
-    const marksCopy = student.marks; // kad sort nesugadintu eiliskuma pazymiu
+    const marksCopy = [...student.marks]; // kad sort nesugadintu eiliskuma pazymiu
     marksCopy.sort((a, b) => a - b);
     student.minMark = marksCopy[0];
 }
 console.log(students[0]);
 console.clear();
+// Dublioti masyva galima su map.(m => m); su slice(); su[...marks]
 // Reikia rasti kiekvieno studento maziausia pazymi  ir tai prideti
 // kaip naujo studento objekto rakata (maxMarks)
-
+//              1 variantas
+// for (const student of students) {
+//     const marksCopy = student.marks.slice(); // kopija masivo
+//     student.marks.sort((a, b) => b - a); //nereikalingas nes jau issortinom
+//     student.maxMark = marksCopy[0];
+// }
+// console.log(students[0]);
+//              2 variantas
 for (const student of students) {
-    const marksCopy = student.marks;
-    student.marks.sort((a, b) => b - a); //nereikalingas nes jau issortinom
-    student.maxMark = marksCopy[0];
+    student.maxMark = Math.max(...student.marks);
 }
-console.log(students[0]);
-
+console.log(students[0])
 // Reikia sudaryti studentu sarasa, (pilni objektai), kuriu pazymiu vidurkis yra didesnis 5.
 
 

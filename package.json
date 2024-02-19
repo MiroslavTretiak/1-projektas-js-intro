@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "spread": "node --watch ./methods/spread.js",
     "memory": "node --watch ./exercises/memory.js",
     "sort": "node --watch ./methods/sort.js",
     "filter": "node --watch ./methods/filter.js",
