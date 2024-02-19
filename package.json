@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "memory": "node --watch ./exercises/memory.js",
+    "sort": "node --watch ./methods/sort.js",
     "filter": "node --watch ./methods/filter.js",
     "map": "node --watch ./methods/map.js",
     "hof": "node --watch ./functions/hof.js",

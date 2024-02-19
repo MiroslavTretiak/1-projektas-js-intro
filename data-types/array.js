@@ -66,7 +66,6 @@ function marksAverage(marks) {
     // i++;
 
     let total = 0;
-    let i = 0;
 
     // total += marks[i++];
     // total += marks[i++];
