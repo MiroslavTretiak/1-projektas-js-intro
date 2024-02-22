@@ -137,3 +137,118 @@ console.log(century(1601), 17, 'Testing for year 1601');
 console.log(century(2000), 20, 'Testing for year 2000');
 console.log(century(89), 1, 'Testing for year 89');
 
+console.clear();
+
+// ivardinti skaiciu kaip zodi
+function numberNameLoop(n) {
+    const dictionary = ['zero', 'one', 'two', 'three', 'four',
+        'five', 'six', 'seven', 'eight', 'nine'];
+    const result = [];
+    while (n / 10 > 0) {
+        result.unshift(dictionary[n % 10]);
+        n = (n - n % 10) / 10;
+    }
+
+    return result.join(' ');
+}
+
+function numberNameAscii(n) {
+    const dictionary = ['zero', 'one', 'two', 'three', 'four',
+        'five', 'six', 'seven', 'eight', 'nine'];
+    const text = '' + n;
+    const result = [];
+
+    for (const symbol of text) {
+        const index = symbol.charCodeAt(0) - 48;
+        result.push(dictionary[index]);
+    }
+
+    return result.join(' ');
+}
+
+function numberName(n) {
+    //n -> string -> split -> array -> for -> skaitmes
+    const dictionary = ['zero', 'one', 'two', 'three', 'four',
+        'five', 'six', 'seven', 'eight', 'nine'];
+    const text = '' + n;
+    const numbers = text.split('');
+    const result = [];
+
+
+    for (const number of numbers) {
+        //const index = +number;
+        const index = parseInt(number);
+        result.push(dictionary[index]);
+
+    }
+    return result.join(' ');
+}
+
+
+console.log(numberNameLoop(0), '-->', 'zero');
+console.log(numberNameLoop(1), '-->', 'one');
+console.log(numberNameLoop(9), '-->', 'nine');
+
+console.log(numberNameLoop(19), '-->', 'one-nine');
+console.log(numberNameLoop(50), '-->', 'fife-0');
+console.log(numberNameLoop(100), '-->', 'one-zero-zero');
+
+console.log(numberNameLoop(1234567890), '-->', '???');
+
+console.clear();
+
+function sumInterval(start, end) {
+    if (start < 0 && end <= 0) {
+        const a = (start * (end - 1) / 2);
+        const b = (end * (0 - 1) / 2);
+        return a;
+    }
+    if (start <= 0 && end >= 0) {
+        return 0;
+    }
+    if (start >= 0 && end > 0) {
+        return 1;
+    }
+
+}
+
+console.log(sumInterval(0, 4), '-->', 10);
+console.log(sumInterval(1, 4), '-->', 10);
+console.log(sumInterval(3, 4), '-->', 9);
+console.log(sumInterval(4, 4), '-->', 7);
+console.log(sumInterval(-3, -1), '-->', 10);
+
+console.clear();
+
+function biggest(list) {
+    if (!Array.isArray(list)) // kaip atpazint array
+    {
+        return 'Error: Duok masyva;'
+    }
+    if (list.length === 0) {
+        return 'Error: tuscias masyvas';
+    }
+    let biggestNumber = -Infinity;
+
+    for (const number of list) {
+        if (number === Infinity)
+            continue; // skipp kazka
+        biggestNumber = number;
+
+        if (number > biggestNumber) {
+            biggestNumber = number;
+        }
+    }
+    return biggestNumber;
+}
+
+// console.log(biggest('pomidoras'));
+// console.log(biggest(2154));
+// console.log(biggest(true));
+// console.log(biggest(biggest));
+// console.log(biggest(null));
+// console.log(biggest({}));
+
+console.log(biggest([1]), '-->', 1);
+console.log(biggest([1, 2, 3]), '-->', 3);
+console.log(biggest([-1, -2, -3]), '-->', -1);
